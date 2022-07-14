@@ -1,42 +1,29 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
-import UserService from "../services/user.service";
-import EventBus from "../common/EventBus";
 
-import PropTypes from "prop-types";
-import ReactTable from "react-table";
 
-import { makeData } from "../common/util";
-import Pagination from "../common/Pagination";
 
-import axios from "axios";
-import Table from "../common/TableContainer";
-import { SelectColumnFilter } from "../common/Filter";
 
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 // import Select from "react-validation/build/select";
 
-import Select from 'react-select'
+import Select from 'react-select';
 
 
-import CheckButton from "react-validation/build/button";
 import SchedulerService from "../services/scheduler.service";
 
 
-import TimeRange from 'react-time-range';
 import moment from 'moment';
 import TimePicker from 'react-bootstrap-time-picker';
-import { timeFromInt } from 'time-number';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { timeFromInt } from 'time-number';
 
 
 import BootstrapTable from "react-bootstrap-table-next";
 import paginationFactory from "react-bootstrap-table2-paginator";
 
-import ReactDOM from "react-dom";
-import ReactToPdf from "react-to-pdf";
 
 import jsPDF from "jspdf";
 import "jspdf-autotable";

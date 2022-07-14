@@ -1,6 +1,6 @@
 import { React, useMemo, useState } from "react";
 import { useAsyncDebounce } from "react-table";
-import { Label, Input } from "reactstrap";
+import { Input, Label } from "reactstrap";
 
 // Component for Global Filter
 export function GlobalFilter({ globalFilter, setGlobalFilter }) {
